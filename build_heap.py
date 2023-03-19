@@ -30,15 +30,15 @@ def build_heap(arr):
 
 def main():
     n = int(input().strip())
-    arr = list(map(int, input().strip().split()))
-    assert len(arr) == n
-    swaps = build_heap(arr)
+    data = list(map(int, input().strip().split()))
+    assert len(data) == n
+
+    swaps = build_heap(data)
+
     print(len(swaps))
     for i, j in swaps:
         print(i, j)
 
 
-
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()
